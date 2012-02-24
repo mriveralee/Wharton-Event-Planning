@@ -8,7 +8,7 @@ import android.view.View;
 public class WhartonEventMainActivity extends Activity {
    
 	public static final int ACTIVITY_CreateAttendee = 1;
-	
+	 
 	
 	/** Called when the activity is first created. */
     @Override
