@@ -39,7 +39,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/whosAttending"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:onClick="onAttendeeButtonClick" />
 
         <Button
             android:id="@+id/milan12_mySchedule"
@@ -90,6 +91,13 @@
 
         <Button
             android:id="@+id/jakarta12_mySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fullSchedule"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+           <Button
+            android:id="@+id/jakarta12_mySchedule55"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

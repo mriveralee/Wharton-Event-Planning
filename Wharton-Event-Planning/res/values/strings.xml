@@ -9,5 +9,8 @@
     <string name="whosAttending">Who\'s Attending?</string>
     <string name="fullSchedule">Full Schedule</string>
     <string name="myNotifications">Notifications</string>
+    <string name="attendeeName">Johnathan Badlam</string>
+    <string name="sendMsg">Send Message</string>
+    <string name="attendeePosition">Sales Representative, Microsoft</string>
 
 </resources>

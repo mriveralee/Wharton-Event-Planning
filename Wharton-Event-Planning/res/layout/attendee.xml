@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <QuickContactBadge
+                android:id="@+id/QuickContactBadge01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/house" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="3dp"
+                    android:text="@string/attendeeName"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView1a"
+                    android:padding="3dp"
+                    android:text="@string/attendeePosition"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <QuickContactBadge
+                android:id="@+id/QuickContactBadge02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/house" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="3dp"
+                    android:text="@string/attendeeName"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView2a"
+                    android:padding="3dp"
+                    android:text="@string/attendeePosition"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <QuickContactBadge
+                android:id="@+id/QuickContactBadge03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/house" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="3dp"
+                    android:text="@string/attendeeName"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView3a"
+                    android:padding="3dp"
+                    android:text="@string/attendeePosition"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <QuickContactBadge
+                android:id="@+id/QuickContactBadge04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/house" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="3dp"
+                    android:text="@string/attendeeName"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView4a"
+                    android:padding="3dp"
+                    android:text="@string/attendeePosition"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <QuickContactBadge
+                android:id="@+id/QuickContactBadge05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/house" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView5a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="3dp"
+                    android:text="@string/attendeeName"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView5b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView5a"
+                    android:padding="3dp"
+                    android:text="@string/attendeePosition"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <QuickContactBadge
+                android:id="@+id/QuickContactBadge06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/house" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView6a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="3dp"
+                    android:text="@string/attendeeName"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView6b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView6a"
+                    android:padding="3dp"
+                    android:text="@string/attendeePosition"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <QuickContactBadge
+                android:id="@+id/QuickContactBadge07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/house" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView7a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="3dp"
+                    android:text="@string/attendeeName"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
