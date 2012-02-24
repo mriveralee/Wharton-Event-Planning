@@ -12,4 +12,11 @@
       	- Add git repo via Cloning in Eclipse.
       	- Use HTTPS & make sure you get the correct link from http://www.github.com/mriveralee/Wharton-Event-Planning
       	- type in your GitHub username/password into the boxes below (after selecting HTTPS the boxes should become editable).
-      	- Enjoy!
+      	- Perform this in terminal:
+      		cd ~
+			echo "export GIT_SSH=~/.ssh" >> .profile
+			
+		- OR this in Ubuntu:
+			cd ~
+			echo "export GIT_SSH=/usr/bin/ssh" >> .profile
+      	-Enjoy!
