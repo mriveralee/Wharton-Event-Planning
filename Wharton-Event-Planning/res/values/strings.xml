@@ -3,5 +3,9 @@
 
     <string name="hello">Hello World, WhartonEventMainActivity!</string>
     <string name="app_name">Wharton Event Planning</string>
+    <string name="milan12">Milan 2012</string>
+    <string name="jakarta12">Jakarta 2012</string>
+    <string name="mySchedule">My Schedule</string>
+    <string name="whosAttending">Who\'s Attending?</string>
 
 </resources>
