@@ -7,5 +7,7 @@
     <string name="jakarta12">Jakarta 2012</string>
     <string name="mySchedule">My Schedule</string>
     <string name="whosAttending">Who\'s Attending?</string>
+    <string name="fullSchedule">Full Schedule</string>
+    <string name="myNotifications">Notifications</string>
 
 </resources>

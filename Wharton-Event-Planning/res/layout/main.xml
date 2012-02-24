@@ -8,15 +8,15 @@
         android:id="@+id/milan12_top_container"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:paddingLeft="10dp" 
+        android:paddingLeft="10dp"
         android:paddingTop="15dp" >
 
         <ImageButton
             android:id="@+id/milan12_add"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@android:color/transparent"
             android:paddingRight="5dp"
-            android:background="@android:color/transparent"           
             android:src="@drawable/plus_button" />
 
         <TextView
@@ -26,7 +26,6 @@
             android:gravity="center_vertical"
             android:text="@string/milan12"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -47,23 +46,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/mySchedule"
+            android:text="@string/fullSchedule"
             android:textAppearance="?android:attr/textAppearanceSmall" />
     </LinearLayout>
-    
+
     <LinearLayout
         android:id="@+id/jakarta12_top_container"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:paddingLeft="10dp" 
+        android:paddingLeft="10dp"
         android:paddingTop="15dp" >
 
         <ImageButton
             android:id="@+id/jakarta12_add"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@android:color/transparent"
             android:paddingRight="5dp"
-            android:background="@android:color/transparent"          
             android:src="@drawable/plus_button" />
 
         <TextView
@@ -73,13 +72,13 @@
             android:gravity="center_vertical"
             android:text="@string/jakarta12"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/jakarta12_bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:baselineAligned="true" >
 
         <Button
             android:id="@+id/jakarta12_attendees"
@@ -94,8 +93,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/mySchedule"
+            android:text="@string/fullSchedule"
             android:textAppearance="?android:attr/textAppearanceSmall" />
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/myNotificationsButton"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/myNotifications" />
+
+        <Button
+            android:id="@+id/myScheduleButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/mySchedule" />
+    </RelativeLayout>
 
 </LinearLayout>
