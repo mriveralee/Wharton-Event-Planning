@@ -14,9 +14,9 @@
       	- type in your GitHub username/password into the boxes below (after selecting HTTPS the boxes should become editable).
       	- Perform this in terminal:
       		cd ~
-			echo "export GIT_SSH=~/.ssh" >> .profile
+		echo "export GIT_SSH=~/.ssh" >> .profile
 			
-		- OR this in Ubuntu:
-			cd ~
-			echo "export GIT_SSH=/usr/bin/ssh" >> .profile
+	- OR this in Ubuntu:
+		cd ~
+		echo "export GIT_SSH=/usr/bin/ssh" >> .profile
       	-Enjoy!
