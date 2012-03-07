@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/contactImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/house" />
+
+            <EditText
+                android:id="@+id/contactSenderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contactImage"
+                android:layout_marginTop="26dp"
+                android:hint="@string/contactHintName"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contactMessageBox"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_above="@+id/contactSendButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/contactSenderName"
+                android:layout_marginTop="46dp"
+                android:gravity="top"
+                android:hint="@string/contactSampleMessage"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/contactSenderEmailBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contactSenderName"
+                android:hint="@string/contactHintEmail"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/contactSendButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="12dp"
+                android:text="@string/contactSendMessage"
+                android:onClick="onSendButtonClick" />
+
+            <TextView
+                android:id="@+id/contactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/contactImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/contactNoName"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/contactPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contactName"
+                android:layout_below="@+id/contactName"
+                android:text="@string/contactNoPosition"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

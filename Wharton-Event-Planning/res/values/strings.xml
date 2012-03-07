@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, WhartonEventMainActivity!</string>
-    <string name="app_name">Wharton Event Planning</string>
+    <string name="app_name">Wharton Events</string>
     <string name="milan12">Milan 2012</string>
     <string name="jakarta12">Jakarta 2012</string>
     <string name="mySchedule">My Schedule</string>
     <string name="whosAttending">Who\'s Attending?</string>
     <string name="fullSchedule">Full Schedule</string>
     <string name="myNotifications">Notifications</string>
-    <string name="attendeeName">Johnathan Badlam</string>
     <string name="sendMsg">Send Message</string>
     <string name="attendeePosition">Sales Representative, Microsoft</string>
+    <string name="contactHintName">Your Name</string>
+    <string name="contactHintEmail">Your Email</string>
+    <string name="contactNoName">Unnamed Person</string>
+    <string name="contactNoPosition">No Position</string>
+    <string name="contactSendMessage">Send</string>
+      <string name="contactSendTitle">Send Message</string>
+    <string name="contactSampleMessage">Message</string>
 
 </resources>
