@@ -39,8 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/whosAttending"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:onClick="onAttendeeButtonClick" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <Button
             android:id="@+id/milan12_mySchedule"

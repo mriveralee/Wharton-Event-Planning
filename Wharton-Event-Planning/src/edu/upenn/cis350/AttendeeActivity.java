@@ -1,16 +1,13 @@
 package edu.upenn.cis350;
 
-import android.R.color;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import edu.upenn.cis350.R;  							// Remember to add this to all activity files
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -18,7 +15,6 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TableRow.LayoutParams;
 import android.widget.TextView;
-import android.widget.QuickContactBadge;
 
 public class AttendeeActivity extends Activity {
 	private String[] NAMES;					// Holds our persons' names
@@ -31,7 +27,9 @@ public class AttendeeActivity extends Activity {
 	        setContentView(R.layout.attendee);
 	        // Locate the TableLayout defined in our attendee.xml
 	        TableLayout attendeesTable = (TableLayout)this.findViewById(R.id.attendeeTableLayout);	// Locate the TableLayout defined in our attendee.xml
-	        fillNamesAndImages(); 																	// Fill Test NAMES & IMAGES array
+	        
+	        Bundle extras = getIntent().getExtras();
+	        fillNamesAndImages(extras.getString("MAIN_EVENT_ATTENDEES")); 																	// Fill Test NAMES & IMAGES array
 	        for (int i =0; i < NAMES.length; i++){													// Now add rows [Note: String name : NAMES]
 	        	int bgColor;
 	        	if(i % 2 == 0) bgColor = Color.argb(255, 30, 30, 30);								// Set transparency, red, green, blue | 0 = transparent, 255 = opaque
@@ -73,24 +71,47 @@ public class AttendeeActivity extends Activity {
 	 *|   Serves as a test until we get the SQL DB running 		|
 	 *|*********************************************************|
 	 */
-	public void fillNamesAndImages(){
-		NAMES = new String[] {"Alex Rodriguez", "Amy Tan", 
-				"Bob Danel", "Brad Pittman", "James Wayne", 
-				"Jessica Aly",  "Jasmin Banks", "Michael Murray",
-				"Michelle Philmore", "Sarah Ryme"	 
-		};
-		IMAGES = new int[] {R.drawable.alex_rodriguez, R.drawable.amy_tan, 
-				R.drawable.bob_danel, R.drawable.brad_pittman,
-				R.drawable.james_wayne, R.drawable.jasmin_banks, R.drawable.jessica_aly,
-				R.drawable.michael_murray, R.drawable.michelle_philmore, R.drawable.sarah_ryme
-		};	
-		POSITIONS = new String[]{"IT Director, Columbia University", "CEO of Enterprise Industries",
-				"CFO of Coca Cola, Neurosurgeon of Seattle General Hospital", "MBA Student, Wharton School",
-				"Fundraising Chair, Grass Roots", "Professor of Marketing, Harvard University",
-				"Founder of InstaPics", "Program Manager, Microsoft", "Promotions Specialist, Zynga", 
-				"Entreprenuer"
-		};
-	}
+	public void fillNamesAndImages(String eventName){
+		
+		// For MILAN2012
+		if (eventName.equals("Milan2012")){
+			this.setTitle("Milan 2012 - Attendees");
+			NAMES = new String[] {"Alex Rodriguez", "Amy Tan", 
+					"Bob Danel", "Brad Pittman", "James Wayne", 
+					"Jessica Aly",  "Jasmin Banks", "Michael Murray",
+					"Michelle Philmore", "Sarah Ryme"	 
+			};
+			IMAGES = new int[] {R.drawable.alex_rodriguez, R.drawable.amy_tan, 
+					R.drawable.bob_danel, R.drawable.brad_pittman,
+					R.drawable.james_wayne, R.drawable.jasmin_banks, R.drawable.jessica_aly,
+					R.drawable.michael_murray, R.drawable.michelle_philmore, R.drawable.sarah_ryme
+			};	
+			POSITIONS = new String[]{"IT Director, Columbia University", "CEO of Enterprise Industries",
+					"CFO of Coca Cola", "MBA Student, Wharton School",
+					"Fundraising Chair, Grass Roots", "Professor of Marketing, Harvard University",
+					"Founder of InstaPics", "Program Manager, Microsoft", "Promotions Specialist, Zynga", 
+					"Entreprenuer"
+			};
+		}
+		else if (eventName.equals("Jakarta2012")){
+			this.setTitle("Jakarta 2012 - Attendees");
+			NAMES = new String[] { "Bob Danel", "James Wayne", 
+					"Jessica Aly",  "Jasmin Banks",
+					"Michelle Philmore", "Sarah Ryme"	 
+			};
+			IMAGES = new int[] { R.drawable.bob_danel,
+					R.drawable.james_wayne, R.drawable.jasmin_banks, R.drawable.jessica_aly,
+					R.drawable.michelle_philmore, R.drawable.sarah_ryme
+			};	
+			POSITIONS = new String[]{
+					"CFO of Coca Cola", "Fundraising Chair, Grass Roots", "Professor of Marketing, Harvard University",
+					"Founder of InstaPics", "Promotions Specialist, Zynga", 
+					"Entreprenuer"
+			};
+		}
+		else 
+			finish();
+		}	
 	
 	/* ************************ CONTACT LISTENER CLASS *********************************
 	 * Private Inner Class for Passing Contact Information Through OnClickListener 
@@ -117,12 +138,7 @@ public class AttendeeActivity extends Activity {
 			//System.out.println("CLICKED: PERSON- " +name+", "+ position +", " + imageID);
 	    	startActivity(j);	
 		}
-		
-		
-		
 	} // END CONTACT LISTENER INNER CLASS
-	
-	
-	
+
 	
 } // End ATTENDEE ACTIVTY Class
