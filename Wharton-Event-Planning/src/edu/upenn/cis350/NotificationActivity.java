@@ -5,6 +5,7 @@
  * or leave them there for future reference.
  * ******************************************************
  */
+
 package edu.upenn.cis350;
 
 import android.app.Activity;
@@ -17,6 +18,8 @@ public class NotificationActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.notification);
+	    
 	    // TODO: pull notification info from a DB
 	    
 	    // TODO: create notification items using Notification inner class
@@ -59,6 +62,9 @@ public class NotificationActivity extends Activity {
 			inSchedule = _inSchedule;
 			context = _context;
 		}
+		
+		// TODO: Add GETTER/SETTER Methods
+		// TODO: Add Remove Notification button
 		
 	}
 

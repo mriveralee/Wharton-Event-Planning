@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="July 2, 2012 3:32PM"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="[Milan 2012] - Coffee with Microsoft"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="The Coffee location has been changed to Mill Cafe Coffee House. The time will remain at 3PM."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="13dp" />
+        </LinearLayout>
+	<Space />
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.42" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="July 2, 2012 3:32PM"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="253dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="[Jakarta 2012] - Social Greeting"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:text="The time has changed from 6PM to 7PM. Dress casually. Dinner will be served"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="13dp" />
+                    
+                </LinearLayout>
+
+            </RelativeLayout>
+        </TableRow>
+
+        <Space />
+
+    </TableLayout>

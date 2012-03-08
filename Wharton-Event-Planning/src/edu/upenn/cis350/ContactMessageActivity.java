@@ -1,5 +1,12 @@
-package edu.upenn.cis350;
+/**
+ * ************* ContactMessageActivity Class   ***********
+ * Connected to the AttendeeActivityClass- allows a user to send a message to a person who they just
+ * selected via the AttendeeAcitivtyClass. The message is then sent to the person's email with the user's
+ * name, email and message.
+ * ******************************************************
+ */
 
+package edu.upenn.cis350;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;

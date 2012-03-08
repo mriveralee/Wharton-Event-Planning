@@ -15,6 +15,6 @@
         
        <activity android:name="AttendeeActivity" android:label="@string/app_name" />
        <activity android:name="ContactMessageActivity" android:label="@string/contactSendTitle" />
-       <activity></activity>
+       <activity android:name="NotificationActivity" android:label="@string/myNotifications"/>
     </application>
 </manifest>

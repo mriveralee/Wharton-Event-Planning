@@ -27,6 +27,11 @@ public final class R {
         public static final int sarah_ryme=0x7f02000d;
     }
     public static final class id {
+        public static final int LinearLayout01=0x7f050019;
+        public static final int TextView01=0x7f05001f;
+        public static final int TextView02=0x7f05001c;
+        public static final int TextView03=0x7f05001b;
+        public static final int TextView04=0x7f05001a;
         public static final int attendeeTableLayout=0x7f050000;
         public static final int contactImage=0x7f050003;
         public static final int contactMessageBox=0x7f050005;
@@ -51,11 +56,17 @@ public final class R {
         public static final int myNotificationsButton=0x7f050016;
         public static final int myScheduleButton=0x7f050017;
         public static final int relativeLayout1=0x7f050002;
+        public static final int relativeLayout2=0x7f05001e;
+        public static final int tableLayout1=0x7f050018;
+        public static final int tableRow1=0x7f05001d;
+        public static final int textView1=0x7f050020;
+        public static final int textView2=0x7f050021;
     }
     public static final class layout {
         public static final int attendee=0x7f030000;
         public static final int contactmessage=0x7f030001;
         public static final int main=0x7f030002;
+        public static final int notification=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

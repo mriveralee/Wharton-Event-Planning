@@ -1,5 +1,13 @@
-package edu.upenn.cis350;
+/**
+ * ************************ AttendeeActivity Class   ***********
+ * Shows all of the attendees in a scrollView for a clicked global forum/event
+ * Allows the user to see their name, position, and picture and then send a message.
+ * Linked to the ContactMessageActivity class through this.
+ * *************************************************************
+ */
 
+
+package edu.upenn.cis350;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
