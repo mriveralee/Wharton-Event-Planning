@@ -1,22 +1,37 @@
+Wharton Events - Android (Mobile) Application
+Developed in Java via Eclipse & Android SDK
+** Currently In Development **
+
+Description: 
+	Allows attendees of events held by the Wharton School of business at the University of Pennsylvania
+	to see current attendees of a Forumns and message them through the app; receive real-time notifications
+	when locations, times, speakers, or events change; keep track of the events a user 'subscribes to' and
+	finally submit questions to moderators doing Q&A sessions.
+
 ***********************************************
    Useful Information for Android Development:
 ***********************************************
-   + Expandable List View - (For onClick, drop down information in Events)
-        [ http://techdroid.kbeanie.com/2010/09/expandablelistview-on-android.html ]
+	+ Expandable List View - (For onClick, drop down information in Events)
+		[ http://techdroid.kbeanie.com/2010/09/expandablelistview-on-android.html ]
 
-   + User Stories
-      [ https://docs.google.com/document/d/1XB_awpm7dPdKuIxDInzcLQWa-0-NU0DVfmm6ymGO2XY/edit ]
+	+ User Stories
+		[ https://docs.google.com/document/d/1XB_awpm7dPdKuIxDInzcLQWa-0-NU0DVfmm6ymGO2XY/edit ]
 
-      
-      Instructions for EGit: 
-      	- Add git repo via Cloning in Eclipse.
-      	- Use HTTPS & make sure you get the correct link from http://www.github.com/mriveralee/Wharton-Event-Planning
-      	- type in your GitHub username/password into the boxes below (after selecting HTTPS the boxes should become editable).
-      	- Perform this in terminal:
-      		cd ~
-		echo "export GIT_SSH=~/.ssh" >> .profile
-			
-	- OR this in Ubuntu:
-		cd ~
-		echo "export GIT_SSH=/usr/bin/ssh" >> .profile
-      	-Enjoy!
+	+ SQLite DB In Android
+		[ http://www.vogella.de/articles/AndroidSQLite/article.html ]
+		[ http://www.hdelossantos.com/2010/01/07/using-a-sqlite-database-in-android/ ]
+
+
+***********************************************
+Instructions for EGit: 
+***********************************************
+ - Add git repo via Cloning in Eclipse     	- Use HTTPS & make sure you get the correct link from http://www.github.com/mriveralee/Wharton-Event-Planning
+ - type in your GitHub username/password into the boxes below (after selecting HTTPS the boxes should become editable).
+ - Perform this in terminal:
+ cd ~
+echo "export GIT_SSH=~/.ssh" >> .profile
+- OR this in Ubuntu:
+	cd ~
+	echo "export GIT_SSH=/usr/bin/ssh" >> .profile
+- It is recommended that Eclipse be used to edit the files and all GIT commands be performed through Terminal/the command prompt
+	There seems to be issues merging using EGIT. 
