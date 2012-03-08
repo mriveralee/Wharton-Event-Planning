@@ -18,22 +18,24 @@ public class ContactMessageActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.contactmessage);
+	    
+	    // Grab Intent's Extras (Stored Values)
 	    Bundle extras = getIntent().getExtras();
-	    name = extras.getString("CONTACT_NAME");
-	    position = extras.getString("CONTACT_POSITION");
-	    imageID = extras.getInt("CONTACT_IMAGEID");
-	    TextView contact_name = (TextView)findViewById(R.id.contactName);
-	    contact_name.setText(name);
-	    TextView contact_position = (TextView)findViewById(R.id.contactPosition);
-	    contact_position.setText(position);
-	    ImageView contact_image = (ImageView)findViewById(R.id.contactImage);
+	    name = extras.getString("CONTACT_NAME");									// Get the Contact's Name
+	    position = extras.getString("CONTACT_POSITION");							// Get the Contact's Position
+	    imageID = extras.getInt("CONTACT_IMAGEID");									// Get the Contact's ImageID
+	    TextView contact_name = (TextView)findViewById(R.id.contactName); 			// Set up the name in a TextView
+	    contact_name.setText(name);										
+	    TextView contact_position = (TextView)findViewById(R.id.contactPosition);	// Set up the position in a TextView
+	    contact_position.setText(position);	
+	    ImageView contact_image = (ImageView)findViewById(R.id.contactImage);		// Set up the image in an ImageView
 	    contact_image.setImageResource(imageID);
 	    
 	}
 	
 	
 	
-	// SEND BUTTON CLICK
+	// SEND BUTTON CLICK for sending the message
 	public void onSendButtonClick(View view){
     	EditText senderNameBox = (EditText)findViewById(R.id.contactSenderName);
     	EditText senderEmailBox = (EditText)findViewById(R.id.contactSenderEmailBox);
