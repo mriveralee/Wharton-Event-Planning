@@ -26,7 +26,7 @@ public class NotificationActivity extends Activity {
 	    
 	    // TODO: Dynamically add notifications to a ListView
 	    
-	    	// TODO: Create Button Listeners for removing notifications
+	    // TODO: Create Button Listeners for removing notifications
 	    
 	}
 	
