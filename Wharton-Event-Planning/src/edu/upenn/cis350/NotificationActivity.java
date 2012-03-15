@@ -28,13 +28,7 @@ public class NotificationActivity extends Activity {
 	    
 	    // TODO: Create Button Listeners for removing notifications
 	    
-	}
-	
-
-	
-	
-	
-	
+	}	
 	
 	/** Private Inner Class that Serves as a Notification Item (set up will occur via the info pull from a SQL table)
 	 *  @params

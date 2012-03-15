@@ -40,8 +40,7 @@ public class ContactMessageActivity extends Activity {
 	    TextView contact_position = (TextView)findViewById(R.id.contactPosition);	// Set up the position in a TextView
 	    contact_position.setText(position);	
 	    ImageView contact_image = (ImageView)findViewById(R.id.contactImage);		// Set up the image in an ImageView
-	    contact_image.setImageResource(imageID);
-	    
+	    contact_image.setImageResource(imageID);	    
 	}
 	
 	

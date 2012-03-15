@@ -18,7 +18,7 @@ import android.view.View.OnClickListener;
 public class WhartonEventMainActivity extends Activity {
    
 	public static final int ACTIVITY_CreateAttendee = 1;
-	 
+	public static final int ACTIVITY_CreateEvent = 2; 
 	
 	/** Called when the activity is first created. */
     @Override
@@ -27,7 +27,8 @@ public class WhartonEventMainActivity extends Activity {
         setContentView(R.layout.main);
         this.findViewById(R.id.milan12_attendees).setOnClickListener(new AttendeeButtonListener("Milan2012", this));		// Set button for  'Who's attending' milan2012
         this.findViewById(R.id.jakarta12_attendees).setOnClickListener(new AttendeeButtonListener("Jakarta2012", this));	// Set button listener for jakarta2012
- 
+        this.findViewById(R.id.milan12_fullSchedule).setOnClickListener(new FullScheduleButtonListener("Milan2012", this));		
+        this.findViewById(R.id.jakarta12_fullSchedule).setOnClickListener(new FullScheduleButtonListener("Jakarta2012", this));
     }
     
     // My Notifications Button Listener
@@ -59,5 +60,23 @@ public class WhartonEventMainActivity extends Activity {
 	    	startActivity(i);
 		}
     } // End AttendeeButtunListener Class
+    
+    private class FullScheduleButtonListener implements OnClickListener{
+    	private String eventName;
+    	private Context context;
+    	
+    	// Constructor
+    	FullScheduleButtonListener (String _eventName, Context _context){
+    		eventName = _eventName;
+    		context = _context;
+    	}
+    	
+    	// Basic onClick function
+		public void onClick(View v) {
+			Intent i = new Intent(context, ScheduleActivity.class);
+	    	i.putExtra("MAIN_EVENT_FULLSCHEDULE", eventName );
+	    	startActivity(i);
+		}
+    } // End FullScheduleButtonListener Class
     
 } // End Wharton Event Main Activity
