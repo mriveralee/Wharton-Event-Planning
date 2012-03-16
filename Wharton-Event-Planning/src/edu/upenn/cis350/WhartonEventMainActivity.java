@@ -59,7 +59,7 @@ public class WhartonEventMainActivity extends Activity {
 	    	i.putExtra("MAIN_EVENT_ATTENDEES", eventName );
 	    	startActivity(i);
 		}
-    } // End AttendeeButtunListener Class
+    } // End AttendeeButtonListener Class
     
     private class FullScheduleButtonListener implements OnClickListener{
     	private String eventName;

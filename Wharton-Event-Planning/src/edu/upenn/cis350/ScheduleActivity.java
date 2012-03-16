@@ -139,7 +139,7 @@ public class ScheduleActivity extends Activity {
 	    	j.putExtra("EVENT_DESCRIPTION", description);
 	    	j.putExtra("EVENT_TIME", time);
 			//System.out.println("CLICKED: PERSON- " +name+", "+ position +", " + imageID);
-	    	startActivity(j);	
+	    	//startActivity(j);	
 		}
 	} // END CONTACT LISTENER INNER CLASS
 
