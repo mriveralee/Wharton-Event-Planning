@@ -23,15 +23,16 @@ public final class R {
         public static final int jessica_aly=0x7f020009;
         public static final int michael_murray=0x7f02000a;
         public static final int michelle_philmore=0x7f02000b;
-        public static final int plus_button=0x7f02000c;
-        public static final int sarah_ryme=0x7f02000d;
+        public static final int more_info=0x7f02000c;
+        public static final int plus_button=0x7f02000d;
+        public static final int sarah_ryme=0x7f02000e;
     }
     public static final class id {
-        public static final int LinearLayout01=0x7f050019;
-        public static final int TextView01=0x7f05001f;
-        public static final int TextView02=0x7f05001c;
-        public static final int TextView03=0x7f05001b;
-        public static final int TextView04=0x7f05001a;
+        public static final int LinearLayout01=0x7f05001a;
+        public static final int TextView01=0x7f050020;
+        public static final int TextView02=0x7f05001d;
+        public static final int TextView03=0x7f05001c;
+        public static final int TextView04=0x7f05001b;
         public static final int attendeeTableLayout=0x7f050000;
         public static final int contactImage=0x7f050003;
         public static final int contactMessageBox=0x7f050005;
@@ -55,20 +56,22 @@ public final class R {
         public static final int milan12_top_container=0x7f05000a;
         public static final int myNotificationsButton=0x7f050016;
         public static final int myScheduleButton=0x7f050017;
+        public static final int myScheduleTableLayout=0x7f050018;
         public static final int relativeLayout1=0x7f050002;
-        public static final int relativeLayout2=0x7f05001e;
-        public static final int scheduleTableLayout=0x7f050022;
-        public static final int tableLayout1=0x7f050018;
-        public static final int tableRow1=0x7f05001d;
-        public static final int textView1=0x7f050020;
-        public static final int textView2=0x7f050021;
+        public static final int relativeLayout2=0x7f05001f;
+        public static final int scheduleTableLayout=0x7f050023;
+        public static final int tableLayout1=0x7f050019;
+        public static final int tableRow1=0x7f05001e;
+        public static final int textView1=0x7f050021;
+        public static final int textView2=0x7f050022;
     }
     public static final class layout {
         public static final int attendee=0x7f030000;
         public static final int contactmessage=0x7f030001;
         public static final int main=0x7f030002;
-        public static final int notification=0x7f030003;
-        public static final int schedule=0x7f030004;
+        public static final int myschedule=0x7f030003;
+        public static final int notification=0x7f030004;
+        public static final int schedule=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
@@ -85,6 +88,7 @@ public final class R {
         public static final int milan12=0x7f040001;
         public static final int myNotifications=0x7f040006;
         public static final int mySchedule=0x7f040003;
+        public static final int noEvents=0x7f040010;
         public static final int sendMsg=0x7f040007;
         public static final int whosAttending=0x7f040004;
     }

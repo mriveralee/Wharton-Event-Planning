@@ -73,6 +73,7 @@ public class AttendeeActivity extends Activity {
 	        	
 	        	ImageButton contactButton = new ImageButton(this);									// Create Contact ImageButton in this view
 	        	contactButton.setImageResource(R.drawable.email);									// Contact Button Image
+	        	contactButton.setBackgroundColor(0);
 	        	contactButton.setOnClickListener(new ContactListener(NAMES[i], POSITIONS[i], IMAGES[i], this));	// Private Class Listen for Custon OnClick listener that passes all info and context for messaging
 	        	person.addView(contactButton);														// Add Contact Button to row
 	        	attendeesTable.addView(person, new TableLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));	        		

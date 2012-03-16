@@ -15,7 +15,8 @@
     <string name="contactNoName">Unnamed Person</string>
     <string name="contactNoPosition">No Position</string>
     <string name="contactSendMessage">Send</string>
-      <string name="contactSendTitle">Send Message</string>
+    <string name="contactSendTitle">Send Message</string>
     <string name="contactSampleMessage">Message</string>
+    <string name="noEvents">You currently have no events in your queue.  To an event, view a schedule and click an event\'s \"+\" button.</string>
 
 </resources>

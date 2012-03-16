@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/myScheduleTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+	 
+	 	<LinearLayout
+        	android:id="@+id/milan12_top_container"
+     		android:layout_width="match_parent"
+     		android:layout_height="match_parent"
+     		android:paddingLeft="10dp"
+     		android:paddingTop="15dp" >
+		
+		     <TextView
+		         android:layout_width="wrap_content"
+		         android:layout_height="match_parent"
+		         android:text="@string/noEvents"
+		         android:textAppearance="?android:attr/textAppearanceLarge" />
+		 </LinearLayout>
+        
+    </TableLayout>

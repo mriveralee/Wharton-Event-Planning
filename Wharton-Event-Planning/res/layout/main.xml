@@ -118,7 +118,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:text="@string/mySchedule" />
+            android:text="@string/mySchedule"
+            android:onClick="onClickMyScheduleButton" />
     </RelativeLayout>
 
 </LinearLayout>

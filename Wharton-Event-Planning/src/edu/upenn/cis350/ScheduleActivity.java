@@ -1,8 +1,7 @@
 /**
- * ************************ AttendeeActivity Class   ***********
- * Shows all of the attendees in a scrollView for a clicked global forum/event
- * Allows the user to see their name, position, and picture and then send a message.
- * Linked to the ContactMessageActivity class through this.
+ * ************************ Schedule Activity Class   ***********
+ *	Shows full schedule with options to add an individual event
+ *  or obtain more information about an event.
  * *************************************************************
  */
 
@@ -55,6 +54,7 @@ public class ScheduleActivity extends Activity {
 	        	//Add event button
 	        	ImageButton addEventButton = new ImageButton(this);														// Create Contact ImageButton in this view
 	        	addEventButton.setImageResource(R.drawable.plus_button);												// Contact Button Image
+	        	addEventButton.setBackgroundColor(0);
 	        	addEventButton.setOnClickListener(new EventInfoListener(EVENT_TITLE[i], TIME[i], LOCATION[i], this));	// Private Class Listen for Custon OnClick listener that passes all info and context for messaging
 	        	event.addView(addEventButton);																			// Add Contact Button to row
 	        	
@@ -84,8 +84,9 @@ public class ScheduleActivity extends Activity {
 	        	
 	        	//Show more details button
 	        	ImageButton showDetailsButton = new ImageButton(this);														// Create Show Details ImageButton in this view
-	        	showDetailsButton.setImageResource(R.drawable.email);														// Show Details Button Image
+	        	showDetailsButton.setImageResource(R.drawable.more_info);														// Show Details Button Image
 	        	showDetailsButton.setOnClickListener(new EventInfoListener(EVENT_TITLE[i], TIME[i], LOCATION[i], this));	// Private Class Listen for Custon OnClick listener that passes all info and context for messaging
+	        	showDetailsButton.setBackgroundColor(0);
 	        	event.addView(showDetailsButton);																			// Add Contact Button to row
 	        	
 	        	scheduleTable.addView(event, new TableLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));	        		

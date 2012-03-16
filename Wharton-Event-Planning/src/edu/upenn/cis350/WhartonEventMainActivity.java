@@ -37,6 +37,11 @@ public class WhartonEventMainActivity extends Activity {
 		startActivity(i);
     }
     
+    // My Schedule Button Listener
+    public void onClickMyScheduleButton(View v){
+    	Intent i = new Intent(this, MyScheduleActivity.class);
+		startActivity(i);
+    }
     
     
     /*********** PRIVATE INNER-CLASS FOR ATTENDEE BUTTON LISTENER ******************
