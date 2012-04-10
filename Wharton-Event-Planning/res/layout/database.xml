@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/db_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/db_person_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" 
+            android:onClick="onClickPersonUpdate"/>
+
+        <Button
+            android:id="@+id/db_person_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" 
+            android:onClick="onClickPersonUpdate"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/db_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/db_event_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" 
+            android:onClick="onClickEventUpdate"/>
+
+        <Button
+            android:id="@+id/db_event_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" 
+            android:onClick="onClickEventUpdate"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/db_gevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/db_gevent_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" 
+            android:onClick="onClickGEventUpdate"/>
+
+        <Button
+            android:id="@+id/db_gevent_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" 
+            android:onClick="onClickEventUpdate"/>
+        
+    </LinearLayout>    
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Person Listing" />
+    
+</LinearLayout>
