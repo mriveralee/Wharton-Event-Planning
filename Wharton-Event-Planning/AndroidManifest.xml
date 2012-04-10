@@ -19,5 +19,6 @@
        <activity android:name="NotificationActivity" android:label="@string/myNotifications"/>
        <activity android:name="ScheduleActivity"></activity>
        <activity android:name="MyScheduleActivity"></activity>
+       <activity android:name="TestDatabaseActivity"></activity>
     </application>
 </manifest>

@@ -43,6 +43,11 @@ public class WhartonEventMainActivity extends Activity {
 		startActivity(i);
     }
     
+    // Test Database Butotn Listener
+    public void onClickTestDBButton(View v){
+    	Intent i = new Intent(this, TestDatabaseActivity.class);
+		startActivity(i);
+    }
     
     /*********** PRIVATE INNER-CLASS FOR ATTENDEE BUTTON LISTENER ******************
      * Allows each attendee list to have a custom button listener that will send the name of the event

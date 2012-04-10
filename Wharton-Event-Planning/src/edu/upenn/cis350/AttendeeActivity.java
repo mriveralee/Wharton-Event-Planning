@@ -31,53 +31,58 @@ public class AttendeeActivity extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-	    super.onCreate(savedInstanceState);
-	        setContentView(R.layout.attendee);
-	        // Locate the TableLayout defined in our attendee.xml
-	        TableLayout attendeesTable = (TableLayout)this.findViewById(R.id.attendeeTableLayout);	// Locate the TableLayout defined in our attendee.xml
-	        
+	    super.onCreate(savedInstanceState);	        
+	    	setContentView(R.layout.attendee);
 	        Bundle extras = getIntent().getExtras();
-	        fillNamesAndImages(extras.getString("MAIN_EVENT_ATTENDEES")); 																	// Fill Test NAMES & IMAGES array
-	        for (int i =0; i < NAMES.length; i++){													// Now add rows [Note: String name : NAMES]
-	        	int bgColor;
-	        	if(i % 2 == 0) bgColor = Color.argb(255, 30, 30, 30);								// Set transparency, red, green, blue | 0 = transparent, 255 = opaque
-	        	else bgColor = Color.argb(255, 20, 20, 20);											// Two grays for dividers
-	        	
-	        	TableRow person = new TableRow(this);
-	        	person.setBackgroundColor(bgColor);													// We divide different rows by alternating colors
-	        	person.setPadding(5, 15, 5, -3);													// Positions images correctly inside row
-	        	person.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));	
-	        	
-	        	ImageView picture = new ImageView(this);											// Create a picture for the person
-	        	picture.setImageResource(IMAGES[i]);												// Set the image of the person
-	        	person.addView(picture);															// Add person's picture to the row
-	        	
-	        	TextView personNameView = new TextView(this);										// Create a TextView for a name
-	        	personNameView.setText(" "+NAMES[i]);												// set NameView to the person's name
-	        	personNameView.setLayoutParams(new TableRow.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1));
-	        	personNameView.setBackgroundColor(Color.TRANSPARENT);
-	        	//person.addView(personNameView);														// Add Name view to this row
-	        	
-	        	TextView positionView = new TextView(this);
-	        	positionView.setText("  "+POSITIONS[i]);	
-	        	positionView.setTextSize((float) 8);
-	        	positionView.setLayoutParams(new TableRow.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.FILL_PARENT, 1));
-	        	positionView.setPadding(0, 1,0, 0);
-	        	//person.addView(positionView);
-	        	
-	        	LinearLayout personInfoLayout = new LinearLayout(this);								// Linear Layout Positions the name and position appropriately
-	        	personInfoLayout.setOrientation(LinearLayout.VERTICAL);
-	        	personInfoLayout.addView(personNameView);											// Add our name to the linear layout
-	        	personInfoLayout.addView(positionView);												// Add our position to the linear layout
-	        	person.addView(personInfoLayout);													// Add the linear layout to the person row
-	        	
-	        	ImageButton contactButton = new ImageButton(this);									// Create Contact ImageButton in this view
-	        	contactButton.setImageResource(R.drawable.email);									// Contact Button Image
-	        	contactButton.setBackgroundColor(0);
-	        	contactButton.setOnClickListener(new ContactListener(NAMES[i], POSITIONS[i], IMAGES[i], this));	// Private Class Listen for Custon OnClick listener that passes all info and context for messaging
-	        	person.addView(contactButton);														// Add Contact Button to row
-	        	attendeesTable.addView(person, new TableLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));	        		
-	        }      
+	        fillAttendeeInfo(extras.getString("MAIN_EVENT_ATTENDEES")); 							// Fill Test NAMES & IMAGES array
+	        showAttendees();																		
+	}
+	
+	// display all attendees of a given conference
+	public void showAttendees() {
+        // Locate the TableLayout defined in our attendee.xml
+        TableLayout attendeesTable = (TableLayout)this.findViewById(R.id.attendeeTableLayout);	// Locate the TableLayout defined in our attendee.xml
+        
+		for (int i =0; i < NAMES.length; i++){													// Now add rows [Note: String name : NAMES]
+        	int bgColor;
+        	if(i % 2 == 0) bgColor = Color.argb(255, 30, 30, 30);								// Set transparency, red, green, blue | 0 = transparent, 255 = opaque
+        	else bgColor = Color.argb(255, 20, 20, 20);											// Two grays for dividers
+        	
+        	TableRow person = new TableRow(this);
+        	person.setBackgroundColor(bgColor);													// We divide different rows by alternating colors
+        	person.setPadding(5, 15, 5, -3);													// Positions images correctly inside row
+        	person.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));	
+        	
+        	ImageView picture = new ImageView(this);											// Create a picture for the person
+        	picture.setImageResource(IMAGES[i]);												// Set the image of the person
+        	person.addView(picture);															// Add person's picture to the row
+        	
+        	TextView personNameView = new TextView(this);										// Create a TextView for a name
+        	personNameView.setText(" "+NAMES[i]);												// set NameView to the person's name
+        	personNameView.setLayoutParams(new TableRow.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1));
+        	personNameView.setBackgroundColor(Color.TRANSPARENT);
+        	//person.addView(personNameView);														// Add Name view to this row
+        	
+        	TextView positionView = new TextView(this);
+        	positionView.setText("  "+POSITIONS[i]);	
+        	positionView.setTextSize((float) 8);
+        	positionView.setLayoutParams(new TableRow.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.FILL_PARENT, 1));
+        	positionView.setPadding(0, 1,0, 0);
+        	//person.addView(positionView);
+        	
+        	LinearLayout personInfoLayout = new LinearLayout(this);								// Linear Layout Positions the name and position appropriately
+        	personInfoLayout.setOrientation(LinearLayout.VERTICAL);
+        	personInfoLayout.addView(personNameView);											// Add our name to the linear layout
+        	personInfoLayout.addView(positionView);												// Add our position to the linear layout
+        	person.addView(personInfoLayout);													// Add the linear layout to the person row
+        	
+        	ImageButton contactButton = new ImageButton(this);									// Create Contact ImageButton in this view
+        	contactButton.setImageResource(R.drawable.email);									// Contact Button Image
+        	contactButton.setBackgroundColor(0);
+        	contactButton.setOnClickListener(new ContactListener(NAMES[i], POSITIONS[i], IMAGES[i], this));	// Private Class Listen for Custon OnClick listener that passes all info and context for messaging
+        	person.addView(contactButton);														// Add Contact Button to row
+        	attendeesTable.addView(person, new TableLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));	        		
+        }      
 	}
 	
 	/*|************ FILL NAMES AND IMAGES METHOD ***************|
@@ -85,7 +90,7 @@ public class AttendeeActivity extends Activity {
 	 *|   Serves as a test until we get the SQL DB running 		|
 	 *|*********************************************************|
 	 */
-	public void fillNamesAndImages(String eventName){
+	public void fillAttendeeInfo(String eventName){
 		
 		// For MILAN2012
 		if (eventName.equals("Milan2012")){

@@ -97,7 +97,20 @@
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
     </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/testDBLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >  
 
+        <Button
+            android:id="@+id/myTestDBButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Local DB"
+            android:onClick="onClickTestDBButton" />
+    </RelativeLayout> 
+    
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
@@ -120,6 +133,6 @@
             android:layout_alignParentLeft="true"
             android:text="@string/mySchedule"
             android:onClick="onClickMyScheduleButton" />
-    </RelativeLayout>
+    </RelativeLayout>       
 
 </LinearLayout>
