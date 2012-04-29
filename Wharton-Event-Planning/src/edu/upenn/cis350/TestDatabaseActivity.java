@@ -31,7 +31,7 @@ public class TestDatabaseActivity extends ListActivity {
 	// Respond to Person Add/Delete from UI
 	public void onClickPersonUpdate(View view) {
 		ArrayAdapter<Person> adapter = (ArrayAdapter<Person>) getListAdapter();
-		Person p = null;
+		Person person = null;
 		
 		// Determine Add/Delete and perform proper function
 		switch (view.getId()) {
@@ -41,15 +41,15 @@ public class TestDatabaseActivity extends ListActivity {
 			String pic = "";
 			String position = "";
 			// Save Person to DB
-			p = dao.createPerson(name, pic, position);
-			adapter.add(p);
+			person = dao.createPerson(name, pic, position);
+			adapter.add(person);
 			break;
 		case R.id.db_person_delete:
 			// Delete first person found, if they exist
 			if(getListAdapter().getCount() > 0) {
-				p = (Person) getListAdapter().getItem(0);
-				dao.deletePerson(p);
-				adapter.remove(p);
+				person = (Person) getListAdapter().getItem(0);
+				dao.deletePerson(person);
+				adapter.remove(person);
 			}		
 			break;
 		}
@@ -59,7 +59,7 @@ public class TestDatabaseActivity extends ListActivity {
 	// Respond to Event Add/Delete from UI
 	public void onClickEventUpdate(View view) {
 		ArrayAdapter<Event> adapter = (ArrayAdapter<Event>) getListAdapter();
-		Event e = null;
+		Event event = null;
 		
 		// Determine Add/Delete and perform proper function
 		switch (view.getId()) {
@@ -70,15 +70,15 @@ public class TestDatabaseActivity extends ListActivity {
 			String loc = "";
 			long gid = 0;
 			// Save Person to DB
-			e = dao.createEvent(name, time, loc, gid);
-			adapter.add(e);
+			event = dao.createEvent(name, time, loc, gid);
+			adapter.add(event);
 			break;
 		case R.id.db_event_delete:
 			// Delete first person found, if they exist
 			if(getListAdapter().getCount() > 0) {
-				e = (Event) getListAdapter().getItem(0);
-				dao.deleteEvent(e);
-				adapter.remove(e);
+				event = (Event) getListAdapter().getItem(0);
+				dao.deleteEvent(event);
+				adapter.remove(event);
 			}		
 			break;
 		}
@@ -88,7 +88,7 @@ public class TestDatabaseActivity extends ListActivity {
 	// Respond to GlobalEvent Add/Delete from UI
 	public void onClickGEventUpdate(View view) {
 		ArrayAdapter<GlobalEvent> adapter = (ArrayAdapter<GlobalEvent>) getListAdapter();
-		GlobalEvent g = null;
+		GlobalEvent g_event = null;
 		
 		// Determine Add/Delete and perform proper function
 		switch (view.getId()) {
@@ -96,15 +96,15 @@ public class TestDatabaseActivity extends ListActivity {
 			// Sample Data - Will connect remote DB later!
 			String name = "Jakarta 2012";
 			// Save Person to DB
-			g = dao.createGlobalEvent(name);
-			adapter.add(g);
+			g_event = dao.createGlobalEvent(name);
+			adapter.add(g_event);
 			break;
 		case R.id.db_gevent_delete:
 			// Delete first person found, if they exist
 			if(getListAdapter().getCount() > 0) {
-				g = (GlobalEvent) getListAdapter().getItem(0);
-				dao.deleteGlobalEvent(g);
-				adapter.remove(g);
+				g_event = (GlobalEvent) getListAdapter().getItem(0);
+				dao.deleteGlobalEvent(g_event);
+				adapter.remove(g_event);
 			}		
 			break;
 		}

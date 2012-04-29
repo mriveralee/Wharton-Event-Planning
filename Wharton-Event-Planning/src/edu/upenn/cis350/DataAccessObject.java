@@ -54,6 +54,7 @@ public class DataAccessObject {
 	// Helper: Initialize Person for creation
 	private Person initPerson(Cursor cursor) {
 		Person p = new Person();
+		// 0/1 are magic constants (0 = id, 1 = name)
 		p.setId(cursor.getLong(0));
 		p.setName(cursor.getString(1));
 		return p;
@@ -105,6 +106,7 @@ public class DataAccessObject {
 	// Helper: Initialize Event for creation	
 	private Event initEvent(Cursor cursor) {
 		Event e = new Event();
+		// 0/1 are magic constants (0 = id, 1 = name)		
 		e.setId(cursor.getLong(0));
 		e.setName(cursor.getString(1));
 		return e;
@@ -153,6 +155,7 @@ public class DataAccessObject {
 	// Helper: Initialize GlobalEvent for creation
 	private GlobalEvent initGlobalEvent(Cursor cursor) {
 		GlobalEvent g = new GlobalEvent();
+		// 0/1 are magic constants (0 = id, 1 = name)		
 		g.setId(cursor.getLong(0));
 		g.setName(cursor.getString(1));
 		return g;

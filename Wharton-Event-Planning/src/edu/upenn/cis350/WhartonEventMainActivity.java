@@ -83,7 +83,7 @@ public class WhartonEventMainActivity extends Activity {
     	
     	// Basic onClick function
 		public void onClick(View v) {
-			Intent i = new Intent(context, ScheduleActivity.class);
+			Intent i = new Intent(context, GlobalScheduleActivity.class);
 	    	i.putExtra("MAIN_EVENT_FULLSCHEDULE", eventName );
 	    	startActivity(i);
 		}

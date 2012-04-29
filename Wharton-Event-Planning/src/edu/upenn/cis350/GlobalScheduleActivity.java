@@ -24,7 +24,7 @@ import android.widget.TableRow.LayoutParams;
 import android.widget.TextView;
 
 @SuppressWarnings("unused")
-public class ScheduleActivity extends Activity {
+public class GlobalScheduleActivity extends Activity {
 	private String[] EVENT_TITLE;					// Holds our persons' names
 	private String[] TIME;					// Holds references to our persons' pictures
 	private String[] LOCATION;
